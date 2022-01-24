@@ -16,6 +16,7 @@ export class AppComponent {
     console.log($event);
     //this.destino = $event.destino;
     //this.valor = $event.valor;
-    this.transferencias.push($event);
+    const transferencia = {...$event, data: new Date()};
+    this.transferencias.push(transferencia);
   }
 }
