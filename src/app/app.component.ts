@@ -9,16 +9,20 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular-bytebank';
 
+  constructor(
+    //private service: TransferenciaService
+    ) {}
+
+
   //destino: number;
   //valor: number;
 
-  constructor(private service: TransferenciaService) {}
 
-  transferir($event) {
-    console.log($event);
-    //this.destino = $event.destino;
-    //this.valor = $event.valor;
-    this.service.adicionar($event);
+  //transferir($event) {
+  //  console.log($event);
+  //  //this.destino = $event.destino;
+  //  //this.valor = $event.valor;
+  //  this.service.adicionar($event);
 
-  }
+  //}
 }
